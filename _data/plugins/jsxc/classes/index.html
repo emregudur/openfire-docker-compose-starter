@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>JSXC</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="jsxc/jsxc.bundle.js"></script>
+    <link href="jsxc/styles/jsxc.bundle.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div></div>
+<script>
+    $(function() {
+        $.getJSON('options.json', function(options) {
+            // The connection settings are piggybacking in the options object.
+            const settings = {
+                xmpp: {
+                    url: options.service,
+                    domain: options.domain,
+                }
+            };
+            options.loadConnectionOptions = function (username, password) {
+                return Promise.resolve(settings);
+            };
+
+            // Remove the connection settings from the options prior to using them.
+            delete options.service;
+            delete options.domain;
+
+            // Parse the customer option that intends to cause debug mode to be enabled.
+            let debugMode = options.debug_enabled;
+            delete options.debug_enabled;
+
+            if ( options.storage ) {
+                // Swap out the (text-based) storage indicator with the actual instance.
+                options.storage = window[options.storage];
+            }
+
+            let jsxc = new JSXC(options);
+
+            if ( debugMode ) {
+                jsxc.enableDebugMode();
+            } else {
+                jsxc.disableDebugMode();
+            }
+
+            jsxc.showLoginBox();
+        })
+    });
+</script>
+</body>
+</html>

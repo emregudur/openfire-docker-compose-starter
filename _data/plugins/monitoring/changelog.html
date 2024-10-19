@@ -1,0 +1,387 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+    <title>Monitoring Plugin Changelog</title>
+    <style type="text/css">
+        BODY {
+            font-size : 100%;
+        }
+        BODY, TD, TH {
+            font-family : tahoma, verdana, arial, helvetica, sans-serif;
+            font-size : 0.8em;
+        }
+        H2 {
+             font-size : 10pt;
+             font-weight : bold;
+             padding-left : 1em;
+        }
+        A:hover {
+            text-decoration : none;
+        }
+        H1 {
+            font-family : tahoma, arial, helvetica, sans-serif;
+            font-size : 1.4em;
+            font-weight: bold;
+            border-bottom : 1px #ccc solid;
+            padding-bottom : 2px;
+        }
+
+        TT {
+            font-family : courier new;
+            font-weight : bold;
+            color : #060;
+        }
+        PRE {
+            font-family : courier new;
+            font-size : 100%;
+        }
+    </style>
+</head>
+<body>
+
+<h1>
+Monitoring Plugin Changelog
+</h1>
+
+<p><b>2.6.0</b> -- September 12, 2024</p>
+<ul>
+    <li>Requires Openfire 4.8.0</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/387'>Issue #387</a>] - Fixes: Compatibility issue with Openfire 4.9.0</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/383'>Issue #383</a>] - Fixes: Database query fails on Oracle</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/377'>Issue #377</a>] - Fixes: Erroneous index confirmation message</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/367'>Issue #367</a>] - Fixes: JRobin's repository uses invalid certificate</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/249'>Issue #249</a>] - Fixes: Erroneous index rebuild progress indicator</li>
+</ul>
+
+<p><b>2.5.0</b> -- May 23, 2023</p>
+<ul>
+    <li>Added Ukrainian (uk_UA) created and provided by Yurii Savchuk (svais) and his son Vladislav Savchuk (Bruhmozavr)!</li>
+    <li>Remove unused exclusion to authentication filter</li>
+</ul>
+
+<p><b>2.4.1</b> -- December 6, 2022</p>
+<ul>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/246'>Issue #246</a>] - Fixes: Clicking graph no longer opens bigger graph on admin console</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/245'>Issue #245</a>] - Fixes: Message history display in admin console remains empty</li>
+</ul>
+
+<p><b>2.4.0</b> -- November 22, 2022</p>
+<ul>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/232'>Issue #232</a>] - Fix SQL issue when retrieving archived messages from MSSQL</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/235'>Issue #235</a>] - Plugin compatible with Openfire 4.8.0</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/238'>Issue #238</a>] - Ensure that Statistics provided by unloaded plugins are no longer referenced.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/240'>Issue #240</a>] - Stop using javascript libraries that are removed from Openfire 4.8</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/242'>Issue #242</a>] - Fix 'Unable to save XML properties' error</li>
+</ul>
+
+<p><b>2.3.1</b> -- September 28, 2022</p>
+<ul>
+    <li>Last plugin release to be compatible with Openfire releases prior to 4.8.0. Future releases will require Openfire 4.8.0 or later.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/229'>Issue #229</a>] - Update iText to 7.2.2</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/224'>Issue #224</a>] - Replace Lightbox library.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/219'>Issue #219</a>] - Replace CalendarJS library.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/222'>Issue #222</a>] - Updates to use non-deprecated Openfire methods</li>
+</ul>
+
+<p><b>2.3.0</b> -- January 19, 2022</p>
+<ul>
+    <li>Requires Openfire 4.7.0</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/125'>Issue #125</a>] - Combining keyword and date range makes search fail</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/155'>Issue #155</a>] - GetConversationsWriteETATask throws exceptions in a cluster</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/162'>Issue #162</a>] - Admin console pages should not break when not all cluster nodes have (the same) version of the plugin loaded</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/163'>Issue #163</a>] - Migrate Jive Globals to System Properties</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/184'>Issue #184</a>] - Do not archive messages that are rejected by blocklist</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/190'>Issue #190</a>] - Allow code-update to force a reindexation</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/192'>Issue #192</a>] - Combining keyword and participant(s) makes search fail</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/195'>Issue #195</a>] - Class incompatibility with latest OF MUC</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/200'>Issue #200</a>] - Remove references to deprecated logger methods</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/206'>Issue #206</a>] - Fixed auto-updates for 'Conversations' admin page</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/208'>Issue #208</a>] - Prevent NullPointerException when retrieving logs for empty room</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/210'>Issue #210</a>] - Update Jersey library to 2.35</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/213'>Issue #213</a>] - Update iText library to 7.1.17</li>
+</ul>
+
+<p><b>2.2.1</b> -- February 12, 2021</p>
+<ul>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/157'>Issue #157</a>] - Poor MAM performance with large archives</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/159'>Issue #159</a>] - Remove Picocontainer</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/160'>Issue #160</a>] - Update JRobin</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/165'>Issue #165</a>] - Fix ordering of MAM results</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/167'>Issue #167</a>] - Deal with empty stanzas in db when processing MAM queries</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/174'>Issue #174</a>] - Upgrade jackson library to 2.12.1</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/175'>Issue #175</a>] - Fix database installation script for MySQL (bug introduced in 2.2.0 that affected new installations)</li>
+</ul>
+
+<p><b>2.2.0</b> -- January 6, 2021</p>
+<ul>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-2157'>OF-2157</a>] - SequenceManager generated IDs are unreliable whilst clustering.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/19'>Issue #19</a>] - Monitoring / Archive plugin fails to reconstruct archived stanza</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/133'>Issue #133</a>] - Allow PMs to be returned when querying MUC archives</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/137'>Issue #137</a>] - MUC messages duplicated as one-on-one messages</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/138'>Issue #138</a>] - Stanzas not always stored for one-to-one messages whilst clustered</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/139'>Issue #139</a>] - Reduce code complexity</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/141'>Issue #141</a>] - Make Archiver configuration configurable</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/142'>Issue #142</a>] - Do not require plugin restart after config change</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/145'>Issue #145</a>] - Replace deprecated API usage</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/146'>Issue #146</a>] - Allow database used for MUC MAM to be configurable</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/147'>Issue #147</a>] - Allow how MUC PMs are stored to be configurable</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/148'>Issue #148</a>] - Database errors should cause an XMPP error</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/152'>Issue #152</a>] - Update iText library to 7.1.13</li>
+</ul>
+
+<p><b>2.1.0</b> -- September 10, 2020</p>
+<ul>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/72'>Issue #72</a>] - Return chat message bodies in response to xep-0136 requests.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/94'>Issue #94</a>] - Add support for full text search for one-on-one MAM search queries.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/101'>Issue #101</a>] - Stable and Unique stanza identifiers need not be in the UUID format.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/103'>Issue #103</a>] - Log flooded with invalid sample time for statistics</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/108'>Issue #108</a>] - Return 'feature-not-implemented' when request for 'out of order' MAM result page.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/110'>Issue #110</a>] - Optimize database: when there are no results, don't bother to query for a subset.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/112'>Issue #112</a>] - MAM doesn't include `complete` attribute on "urn:xmpp:mam:2" query with &lt;fin/&gt; when result is empty.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/113'>Issue #113</a>] - Improve usage of 'resource' columns in the database.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/114'>Issue #114</a>] - NullPointerException when loading plugin on senior cluster node.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/118'>Issue #118</a>] - Drop Openfire requirement to 4.4.0.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/122'>Issue #122</a>] - Set RSM 'last' value even when there's just one result in the set.</li>
+</ul>
+
+<p><b>2.0.1</b> -- May 11, 2020</p>
+<ul>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/91'>Issue #91</a>] - Exception when search text contains special characters</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/98'>Issue #98</a>] - MAM IQ result missing first and last element</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/94'>Issue #94</a>] - Do not advertise 'free text search' feature for personal archives (that do not support that feature).</li>
+</ul>
+
+<p><b>2.0.0</b> -- January 28, 2020</p>
+<ul>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/20'>Issue #20</a>] - Update Lucene to 8.4.0</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/58'>Issue #58</a>] - Fix for poor performance when adding messages to a large database.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/46'>Issue #46</a>] - Specific messages do not show up in retrieved message history.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/47'>Issue #47</a>] - Fix Syntax in SQL Statement for SQL Server in PaginatedMucMessageQuery</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/60'>Issue #60</a>] - Java11 ClassNotFoundException when deploying.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/62'>Issue #62</a>] - Set 'complete' only on last page retrieval.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/63'>Issue #63</a>] - Add support for 'with' search field for MAM MUC queries.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/67'>Issue #67</a>] - Fix bug: maxRetrieval was never used</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/69'>Issue #69</a>] - Fix wrong parameter setters for prepared Statement in ConversationManager (getMessageIdForStableId)</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/70'>Issue #70</a>] - Purge and reinitialize incorrect statistic databases (RRDs).</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/73'>Issue #73</a>] - Unable to resume rebuilding Lucene index</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/74'>Issue #74</a>] - Hide (expensive) index statistics behind a button to improve performance.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/75'>Issue #75</a>] - Forwarded messages from MUC MAM results must not have to address.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/76'>Issue #76</a>] - Monitoring plugin does not retrieve last page of chat history when 'before' is empty.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/79'>Issue #79</a>] - Return item-not-found when using unrecognized references in RSM</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/80'>Issue #80</a>] - Embedded database only: Prevent all messages to be returned when only a count is requested.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/81'>Issue #81</a>] - Allow for non-standard MUC MAM text search fields to be used.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/82'>Issue #82</a>] - Fix incorrect 'total' counts with JDBC-based results.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/83'>Issue #83</a>] - Remove service discovery features when unloading plugin.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/84'>Issue #84</a>] - MAM: Return error when unrecognized search options are used.</li>
+</ul>
+
+<p><b>1.8.1</b> -- September 25, 2019</p>
+<ul>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/53'>Issue #53</a>] - XSS in Monitoring Plugin's Archiving Settings page.</li>
+</ul>
+
+<p><b>1.8.0</b> -- June 25, 2019</p>
+<ul>
+    <li>Requires Openfire 4.4.0</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/5'>Issue #5</a>] - MAM implementation should include urn:xmpp:mam:2</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/9'>Issue #9</a>] - Update pt_BR translation</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/25'>Issue #25</a>] - When logging is disabled, queries should not go unanswered.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/27'>Issue #27</a>] - Fix addressing when original request has no 'to' attribute.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/29'>Issue #29</a>] - Fix Maven build.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/31'>Issue #31</a>] - Renamed duplicate database column definition.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/36'>Issue #36</a>] - Fixes newlines in obtained archived messages.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/38'>Issue #38</a>] - Recent MUC messages missing in archive result.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/41'>Issue #41</a>] - Improve performance for chatrooms that have many archived messages.</li>
+</ul>
+
+<p><b>1.7.0</b> -- January 12, 2019</p>
+<ul>
+    <li>Requires Openfire 4.3.0</li>
+    <li>Minimum Java requirement: 1.8</li>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1644'>OF-1644</a>] - Allow non-local users to query MAM.</li>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1576'>OF-1576</a>] - MAM implementation should properly advertise support.</li>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1517'>OF-1517</a>] - Don't require i18n source files for all plugins to be encoded.</li>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1641'>OF-1641</a>] - Ensure all JSP pages have the correct contentType.</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/1'>Issue #1</a>] - Monitoring is not showing statistics graphs</li>
+    <li>[<a href='https://github.com/igniterealtime/openfire-monitoring-plugin/issues/2'>Issue #2</a>] - Monitoring plugin not showing actual messages in search</li>
+</ul>
+
+<p><b>1.6.2</b> -- July 19, 2018</p>
+<ul>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1578'>OF-1578</a>] - Small Statistics Graphs are not generated.</li>
+</ul>
+
+
+<p><b>1.6.1</b> -- June 28, 2018</p>
+<ul>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1566'>OF-1566</a>] - Fix for archive search with password protected chatrooms.</li>
+</ul>
+
+<p><b>1.6.0</b> -- March 5, 2018</p>
+<ul>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1486'>OF-1486</a>] - MAM RSM queries for MUC should allow for 'backwards-paging'.</li>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1487'>OF-1487</a>] - Archived messages should become available in the database instantly.</li>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1200'>OF-1200</a>] - Don't answer MAM queries before relevant archives have been stored.</li>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1498'>OF-1498</a>] - Fix for stanza reconstruction bug.</li>
+</ul>
+
+<p><b>1.5.9</b> -- Feb 13, 2018</p>
+<ul>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1482'>OF-1482</a>] - MAM query response for MUC should have a 'from'.</li>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1483'>OF-1483</a>] - Restoring Admin console functionality.</li>
+</ul>
+
+<p><b>1.5.8</b> -- Nov 13, 2017</p>
+<ul>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1030'>OF-1030</a>] - Monitoring Service plugin Search Archive Date Range field validation</li>
+</ul>
+
+<p><b>1.5.7</b> -- May 19, 2017</p>
+<ul>
+    <li>[<a href='https://issues.igniterealtime.org/browse/OF-1334'>OF-1334</a>] - Monitoring Plugin displays "Archive index rebuild failed"</li>
+</ul>
+
+<p><b>1.5.6</b> -- February 16, 2016</p>
+<ul>
+    <li>[<a href='https://igniterealtime.org/issues/browse/OF-1288'>OF-1288</a>] - Add missing queryid and id attributes</li>
+</ul>
+
+<p><b>1.5.5</b> -- December 19, 2016</p>
+<ul>
+    <li>[<a href='https://igniterealtime.org/issues/browse/OF-1246'>OF-1246</a>] - Support MAM (XEP-0313) for MUC (XEP-0045)</li>
+    <li>[<a href='https://igniterealtime.org/issues/browse/OF-1214'>OF-1214</a>] - Update MAM (XEP-0313) to support :0 and :1 versions</li>
+</ul>
+
+<p><b>1.5.4</b> -- April 27, 2016</p>
+<ul>
+    <li>[<a href='https://igniterealtime.org/issues/browse/OF-1132'>OF-1132</a>] - Ensure that namespace is defined on forwarded messages.</li>
+</ul>
+
+<p><b>1.5.3</b> -- March 22, 2016</p>
+<ul>
+    <li>[<a href='https://igniterealtime.org/issues/browse/OF-1117'>OF-1117</a>] - Improve performance of monitoring plugin by adding database indexes.</li>
+</ul>
+
+<p><b>1.5.2</b> -- Feb 15, 2016</p>
+<ul>
+    <li>[<a href='https://igniterealtime.org/issues/browse/OF-1089'>OF-1089</a>] - Send IQ result only after messages.</li>
+</ul>
+
+<p><b>1.5.1</b> -- Feb 15, 2016</p>
+<ul>
+    <li>[<a href='https://igniterealtime.org/issues/browse/OF-1087'>OF-1087</a>] - Fixed namespace handling (BOSH).</li>
+</ul>
+
+<p><b>1.5.0</b> -- October 12, 2015</p>
+<ul>
+    <li>[<a href='http://www.igniterealtime.org/issues/browse/OF-953'>OF-953</a>] - Updated JSP libraries.</li>
+    <li>Requires Openfire 3.11.0.</li>
+</ul>
+
+<p><b>1.4.7</b> -- Oct 13, 2015</p>
+<ul>
+    <li>Fixed feature-not-implemented error</li>
+</ul>
+
+<p><b>1.4.6</b> -- Aug 11, 2015</p>
+<ul>
+    <li>Added support for XEP-0313: Message Archive Management</li>
+</ul>
+
+<p><b>1.4.4</b> -- Oct 28, 2014</p>
+<ul>
+    <li>Fixed request conversations and messages</li>
+    <li>Now conversations list is sorted</li>
+</ul>
+
+<p><b>1.4.3</b> -- Oct 27, 2014</p>
+<ul>
+    <li>OF-812 properly handle the start attribute in list requests</li>
+</ul>
+
+<p><b>1.4.2</b> -- Apr 30, 2014</p>
+<ul>
+    <li>ofConParticipant table name is case sensitive on linux+mysql</li>
+</ul>
+
+
+<p><b>1.4.1</b> -- Feb 26, 2014</p>
+<ul>
+     <li>Plugin was not working with MS SQL Server (Now work with MS SQL Server 2005+).</li>
+         <li>Fixed request conversations and messages in reverse order.</li>
+         <li>Fixed request conversations and messages in reverse order.</li>
+         <li>Plugin does not return the correct number of conversations at the request history.</li>
+</ul>
+
+<p><b>1.4.0</b> -- Sep 13, 2013</p>
+<ul>
+     <li>Requires Openfire 3.9.0.</li>
+</ul>
+
+<p><b>1.3.3</b> -- June 5, 2013</p>
+
+<ul>
+    <li>OF-677 - Monitoring Plugin - "Null" reappearing in Archive for Message Body.</li>
+    <li>OF-678 - Monitoring Plugin - Ever expanding Index.</li>
+</ul>
+
+<p><b>1.3.2-rc1</b> -- May 13, 2013</p>
+
+<ul>
+     <li>OF-651 - Monitoring plugin should have an option to purge and restrict.</li>
+</ul>
+
+
+<p><b>1.3.1-rc1</b> -- April 30, 2013</p>
+
+<ul>
+     <li>OF-611 - Monitoring plugin 1.3.0 is not updating IDs of older archived messages.</li>
+     <li>OF-646 - Reverts XmppDateTimeFormat integration which broke querying via XEP-0136.</li>
+     <li>OF-664 - Monitoring archive shows null in room chat logs.</li>
+     <li>OF-667 - Monitoring plugin bad SQL for upgrade</li>
+</ul>
+
+
+<p><b>1.3.0</b> -- October 17, 2012</p>
+
+<ul>
+     <li>Monitoring plugin 1.3.0 integrating Jive Monitoring Plugin and Stefan Reuter's Open Archive plugin to give both XEP-0136 support and group as well as individual chat archiving.</li>
+</ul>
+
+<p><b>1.2.0</b> -- December 1, 2009</p>
+
+<ul>
+     <li>Compatible version with Openfire 3.7.0.</li>
+     <li>Applied Java generics.</li>
+     <li>[<a href='http://www.igniterealtime.org/issues/browse/OF-53'>OF-53</a>] - Replace custom logging implementation with a third party library.</li>
+</ul>
+
+<p><b>1.1.1</b> -- November 14, 2008</p>
+
+<ul>
+     <li>[<a href='http://www.igniterealtime.org/issues/browse/JM-1469'>JM-1469</a>] - Fixed invalid link to groupchat room from 'Active conversations' page.</li>
+</ul>
+
+<p><b>1.1.0</b> -- July 31, 2008</p>
+
+<ul>
+     <li>Compatible version with Openfire 3.6.0. </li>
+</ul>
+
+<p><b>1.0.1</b> -- May 6, 2008</p>
+
+<ul>
+     <li>Dashboard was not working when running in a cluster.</li>
+     <li>Fixed navitation to room from dashboard.</li>
+</ul>
+
+<p><b>1.0.0</b> -- April 24, 2008</p>
+
+<ul>
+     <li>Initial release. </li>
+</ul>
+
+
+</body>
+</html>

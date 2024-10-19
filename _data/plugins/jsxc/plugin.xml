@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <class>org.igniterealtime.openfire.plugin.jsxc.JSXCPlugin</class>
+    <name>JSXC</name>
+    <description>Adds the (third-party) JSXC web client to Openfire.</description>
+    <author>Guus der Kinderen</author>
+    <version>4.4.0.1</version>
+    <date>2022-04-06</date>
+    <minServerVersion>4.4.0</minServerVersion>
+    <minJavaVersion>1.8</minJavaVersion>
+    <adminconsole>
+        <tab id="tab-webclients" name="${admin.sidebar.webclients.name}" description="${admin.sidebar.webclients.description}" url="jsxc-config.jsp">
+            <sidebar id="tab-jsxc" name="${admin.sidebar.webclients.item.jsxc.name}" description="${admin.sidebar.webclients.item.jsxc.description}">
+                <item id="jsxc-config" name="${admin.sidebar.webclients.item.settings.name}" description="${admin.sidebar.webclients.item.settings.description}" url="jsxc-config.jsp"/>
+            </sidebar>
+        </tab>
+    </adminconsole>
+</plugin>

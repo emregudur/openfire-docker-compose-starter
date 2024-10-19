@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+    <title>JSXC Plugin Changelog</title>
+    <style type="text/css">
+        BODY {
+            font-size : 100%;
+        }
+        BODY, TD, TH {
+            font-family : tahoma, verdana, arial, helvetica, sans-serif;
+            font-size : 0.8em;
+        }
+        H2 {
+             font-size : 10pt;
+             font-weight : bold;
+             padding-left : 1em;
+        }
+        A:hover {
+            text-decoration : none;
+        }
+        H1 {
+            font-family : tahoma, arial, helvetica, sans-serif;
+            font-size : 1.4em;
+            font-weight: bold;
+            border-bottom : 1px #ccc solid;
+            padding-bottom : 2px;
+        }
+        TT {
+            font-family : courier new;
+            font-weight : bold;
+            color : #060;
+        }
+        PRE {
+            font-family : courier new;
+            font-size : 100%;
+        }
+    </style>
+</head>
+<body>
+
+<h1>
+    JSXC Plugin Changelog
+</h1>
+
+<p><b>4.4.0 Release 1</b> -- April 6, 2022</p>
+<ul>
+    <li>Updated to JSXC <a href="https://github.com/jsxc/jsxc/releases/tag/v4.4.0">version 4.4.0</a>, which brings:
+        <p>Added</p>
+        <ul>
+            <li>add chat message context menu</li>
+            <li>add Last Message Correction (XEP-0308)</li>
+            <li>add generic type to storage interface</li>
+            <li>add User Avatar (XEP-0084)</li>
+        </ul>
+
+        <p>Fixed</p>
+        <ul>
+            <li>style of roster tags</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/1063">#1063</a> check for notification api</li>
+            <li>creation of multi html element msg</li>
+            <li>type of hook repository</li>
+            <li>after receive message pipe</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/1021">#1021</a> pep based avatars</li>
+            <li>xml jquery type in vcard</li>
+            <li>display of load mam button (mam)</li>
+            <li>load button after history was cleared (mam)</li>
+            <li>add loadbutton to clear event (mam)</li>
+            <li>show "Load Button" if messare area is empty (mam)</li>
+            <li>translations</li>
+            <li>info msg for contacts without omemo (omemo)</li>
+            <li>qr code without devices (omemo)</li>
+            <li>user media request</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/1028">#1028</a> jingle message initiation</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/1050">#1050</a> escape nickname (muc)</li>
+            <li>create rooms (muc)</li>
+            <li>use random nickname for bookmarks without nick</li>
+            <li>video removal</li>
+            <li>display of remote stream</li>
+            <li>offline contacts translation</li>
+            <li>fix darkmode</li>
+            <li>fix own avatar on sm</li>
+            <li>fix main menu height on sm</li>
+        </ul>
+
+        <p>Misc</p>
+        <ul>
+            <li>improve code structure</li>
+            <li>fix style format</li>
+            <li>fix code style</li>
+            <li>update demo domain</li>
+            <li>fix demo script</li>
+            <li>update locales</li>
+        </ul>
+
+    </li>
+    <li><a href="https://github.com/igniterealtime/openfire-jsxc-plugin/issues/14">#14:</a> Update JQuery from 3.5.1 to 3.6.0.</li>
+    <li><a href="https://github.com/igniterealtime/openfire-jsxc-plugin/issues/17">#17:</a> : Replace usage of deprecated Openfire API.</li>
+</ul>
+
+<p><b>4.3.1 Release 1</b> -- August 9, 2021</p>
+<ul>
+    <li>Updated to JSXC <a href="https://github.com/jsxc/jsxc/releases/tag/v4.3.1">version 4.3.1</a>, which brings:
+        <p>Fixed</p>
+        <ul>
+            <li>types for client interface</li>
+            <li>fix conflicts with external styles</li>
+        </ul>
+
+        <p>Misc</p>
+        <ul>
+            <li>add env flag to build script</li>
+            <li>update locales</li>
+            <li>update dependencies</li>
+            <li>fix otr package version</li>
+            <li>update code style</li>
+        </ul>
+    </li>
+</ul>
+
+<p><b>4.3.0 Release 1</b> -- June 7, 2021</p>
+<ul>
+    <li>Updated to JSXC <a href="https://github.com/jsxc/jsxc/releases/tag/v4.3.0">version 4.3.0</a>, which brings:
+        <p>Added</p>
+        <ul>
+            <li>show different icon for open rooms (muc)</li>
+            <li>make room features persistant</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/890">#890</a> add Jingle Message Initiation (XEP-0353)</li>
+            <li>encapsulate session storage for every plugin</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/864">#864</a> update sounds</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/748">#748</a><a href="https://github.com/jsxc/jsxc/issues/985">#985</a> avatar upload</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/304">#304</a> announce own avatar</li>
+            <li>add QR codes to device dialog (<a href="https://github.com/jsxc/jsxc/issues/993">#993</a>) (omemo)</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/1001">#1001</a> decrypt attachment (omemo)</li>
+            <li>show extended room info (muc)</li>
+            <li>show occupants in room info (muc)</li>
+            <li>add entity time (XEP-0202)</li>
+            <li>add Blocking Commands (XEP-0191)</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/978">#978</a> add status to presence</li>
+            <li>add software version (XEP-0092)</li>
+            <li>add info about general xeps to settings</li>
+            <li>make some sections in settings dialog collapsible</li>
+            <li>open xep links in new tab</li>
+            <li>add roster filter for groups</li>
+            <li>show roster group in vcard dialog</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/77">#77</a> show roster group in roster</li>
+            <li>process image url as attachment</li>
+            <li>open attachment in new tab</li>
+            <li>add User Search (XEP-0055)</li>
+            <li>use conference subdomain as default</li>
+        </ul>
+
+        <p>Fixed</p>
+        <ul>
+            <li>presence update for members with multiple devices (muc)</li>
+            <li>try all user media before failing</li>
+            <li>member jid retrieval (muc)</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/1025">#1025</a> nickname in status code messages (mux)</li>
+            <li>webpack config error</li>
+            <li>toggle of archive button</li>
+            <li>cut off roster tooltip</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/1004">#1004</a> text input overflow</li>
+            <li>handle muc codes in message elements (muc)</li>
+            <li>muc user list timeout</li>
+            <li>placeholder after avatar was removed</li>
+            <li>show message error</li>
+            <li>handle error messages from OpenFire</li>
+            <li>catch error messages</li>
+            <li>do not mark messages with error</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/1007">#1007</a> disable chatmarker for error messages</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/1009">#1009</a><a href="https://github.com/jsxc/jsxc/issues/1010">#1010</a> duplicated roster item</li>
+            <li>enabling from default disabled plugins (<a href="https://github.com/jsxc/jsxc/issues/1006">#1006</a>)</li>
+            <li>do not attach thumbnail (omemo)</li>
+            <li>decode filename of attachment (omemo)</li>
+            <li>ignore case for encrypted image (omemo)</li>
+            <li>remove encrypted file link from message (omemo)</li>
+            <li>status for roster items</li>
+            <li>generate thumbnail for links</li>
+            <li>set correct filename for attachment</li>
+            <li>feature list (muc)</li>
+            <li>check support for blocking command</li>
+            <li>null exception</li>
+            <li>return type of sendIQ</li>
+            <li>support check (omemo)</li>
+            <li>collapsible settings</li>
+            <li>xep url</li>
+            <li>disable omemo checkbox in settings</li>
+            <li>multi user contact subscription</li>
+            <li>stop propagation for tag click</li>
+            <li>force support check (omemo)</li>
+            <li>move clear all notifications entry to bottom (<a href="https://github.com/jsxc/jsxc/issues/991">#991</a>)</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/994">#994</a> message input padding</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/972">#972</a> use border-box</li>
+            <li>open help in new tab</li>
+            <li>vcard parsing</li>
+        </ul>
+
+        <p>Misc</p>
+        <ul>
+            <li>update locales</li>
+            <li>add wti workflow (<a href="https://github.com/jsxc/jsxc/issues/1038">#1038</a>)</li>
+            <li>move to github actions</li>
+            <li>update dependencies</li>
+            <li>add config for fantasticon</li>
+            <li>replace node-sass with dart sass</li>
+            <li>fix issues with upgrade deps</li>
+            <li>upgrade to webpack 5</li>
+            <li>use eslint</li>
+            <li>small typo fix (<a href="https://github.com/jsxc/jsxc/issues/988">#988</a>)</li>
+            <li>fix karma tests</li>
+            <li>improve build time</li>
+            <li>reorganize call sync</li>
+            <li>add types to persistant map</li>
+            <li>use prettier for consistent code style</li>
+            <li>add types</li>
+            <li>add missing semicolon</li>
+            <li>emphasize roster item with unread msg</li>
+        </ul>
+    </li>
+</ul>
+
+<p><b>4.2.1 Release 1</b> -- April 21, 2021</p>
+<ul>
+    <li>Updated to JSXC <a href="https://github.com/jsxc/jsxc/releases/tag/v4.2.1">version 4.2.1</a>, which brings:
+        <p>Fixed</p>
+        <ul>
+            <li><a href="https://github.com/jsxc/jsxc/issues/962">#962</a> handle muc presence errors</li>
+            <li>send displayed marker only for private chats</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/959">#959</a> use full jid only for private chats</li>
+            <li><a href="https://github.com/jsxc/jsxc/issues/958">#958</a>/<a href="https://github.com/jsxc/jsxc/issues/961">#961</a> transparent roster menu</li>
+        </ul>
+        <p>Misc</p>
+        <ul>
+            <li>update language files</li>
+        </ul>
+    </li>
+</ul>
+
+<p><b>4.2.0 Release 1</b> -- December 14, 2020</p>
+<ul>
+    <li>Updated to JSXC <a href="https://github.com/jsxc/jsxc/releases/tag/v4.2.0">version 4.2.0</a>, which brings:
+        <p>Added</p>
+        <ul>
+            <li>add option to disable automatic reconnect on page load</li>
+            <li><a href="https://github.com/jsxc/jsxc/pull/889">#889</a> add xmpp ping (server-to-client) plugin</li>
+            <li><a href="https://github.com/jsxc/jsxc/pull/771">#771</a> add dark theme and css vars</li>
+            <li>use icon font for most used icons</li>
+            <li><a href="https://github.com/jsxc/jsxc/pull/856">#856</a> add image paste feature (<a href="https://github.com/jsxc/jsxc/pull/948">#948</a>)</li>
+        </ul>
+        <p>Fixed</p>
+        <ul>
+            <li><a href="https://github.com/jsxc/jsxc/pull/955">#955</a> duplicate message when load mam</li>
+            <li>delete device list on refresh (omemo)</li>
+            <li><a href="https://github.com/jsxc/jsxc/pull/933">#933</a> fix icon if someone leaves a muc room</li>
+            <li><a href="https://github.com/jsxc/jsxc/pull/873">#873</a> fix chat window width</li>
+        </ul>
+        <p>Misc</p>
+        <ul>
+            <li>update lang</li>
+            <li>update dependencies</li>
+            <li>highlight only contacts without subscription</li>
+            <li>upgrade to node 12</li>
+        </ul>
+        <p>Deprecated</p>
+        <ul>
+            <li>SASS variables will be removed in one of the next releases. Use css variables instead.</li>
+        </ul>
+    </li>
+</ul>
+
+<p><b>4.1.1 Release 1</b> -- August 1, 2020</p>
+<ul>
+    <li>Initial release.</li>
+    <li>Based on <a href="https://github.com/jsxc/jsxc/releases/tag/v4.1.1">version 4.1.1</a> of JSXC.</li>
+</ul>
+
+</body>
+</html>
